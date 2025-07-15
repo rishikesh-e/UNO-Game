@@ -1,8 +1,8 @@
 import { Card } from "./card";
 
 export interface Player {
-  id: String;
-  name?: String;
+  id: string;
+  name?: string;
   isBot: boolean;
   hand: Card[];
   hasUnoCalled?: boolean;
