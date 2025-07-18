@@ -1,9 +1,9 @@
-import { Card } from "./card";
+import { Card } from "./card"
 
 export interface Player {
-  id: string;
-  name?: string;
-  isBot: boolean;
-  hand: Card[];
-  hasUnoCalled?: boolean;
+    id: string
+    name?: string
+    isBot: boolean
+    hand: Card[]
+    hasUnoCalled?: boolean
 }

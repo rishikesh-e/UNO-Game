@@ -12,7 +12,7 @@ class GameState {
   gameStarted: boolean = false;
   winnerId?: string;
 
-  get currentPlayerId(): String {
+  get currentPlayerId(): string {
     return this.players[this.currentPlayerIndex]?.id;
   }
 
@@ -29,6 +29,10 @@ class GameState {
 
   public reverseDirection(): void {
     this.direction *= -1;
+  }
+
+  get getTopCard(): Card {
+    return this.discardPile[this.discardPile.length-1]
   }
 }
 
